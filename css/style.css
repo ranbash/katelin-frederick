@@ -1,3 +1,4 @@
+/***** Styles *****/
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +11,24 @@ body {
   align-items: center;
   flex-flow: column; }
 
+section {
+  width: 80vw;
+  font-size: 1.2em; }
+
+.sectionHeading {
+  font-size: 2.5em;
+  background: #262626;
+  color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 5px solid #74C2E1;
+  text-transform: uppercase; }
+
+.subHeading {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin: 50px 0 50px 0; }
+
+/**** Landing Section *****/
 nav {
   width: 100%;
   background: #262626; }
@@ -45,45 +64,27 @@ nav {
   background-image: url("../img/landingImage.jpg");
   repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px #262626;
   border-bottom: 5px solid #74C2E1;
   animation-duration: 2s; }
-  #landing .landingText {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column; }
   #landing .landingHeading {
     font-size: 6em; }
   #landing h5 {
     font-size: 2.5em; }
 
-section {
-  width: 80vw;
-  font-size: 1.2em; }
-
+/***** About Me Section *****/
 #aboutMeSection h1 {
   animation-duration: 2s; }
 
 #aboutMeSection p {
   animation-duration: 2s; }
-
-.sectionHeading {
-  font-size: 2.5em;
-  background: #262626;
-  color: #f4f4f4;
-  padding: 10px;
-  border-bottom: 5px solid #74C2E1;
-  text-transform: uppercase; }
-
-.subHeading {
-  font-size: 1.8em;
-  text-transform: uppercase;
-  margin: 50px 0 50px 0; }
 
 .imageContainer {
   display: flex;
@@ -97,7 +98,7 @@ section {
     width: 200px;
     border: 5px solid #74C2E1; }
 
-/*** Skills Section ***/
+/***** Skills Section *****/
 #skillsSection h1 {
   animation-duration: 2s; }
 
@@ -121,6 +122,7 @@ section {
 dl {
   animation-duration: 2s; }
 
+/***** Whats Next Section *****/
 #whatsNextSection h1 {
   animation-duration: 2s; }
 
@@ -309,6 +311,7 @@ footer {
 #email {
   font-size: 20px; }
 
+/***** Media Queries *****/
 @media (max-width: 768px) {
   .toggle {
     display: block; }

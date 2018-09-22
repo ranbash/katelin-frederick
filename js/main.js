@@ -3,6 +3,8 @@ $('.menu').click(function() {
   $('ul').toggleClass('active');
 });
 
+
+
 //  Function to Add Animations to Elements
 function animate(element, animation) {
   $(element).addClass('animated ' +animation);

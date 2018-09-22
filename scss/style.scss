@@ -85,20 +85,16 @@ nav {
   background-image: url('../img/landingImage.jpg');
   repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px $darkGrey;
   border-bottom: 5px solid $lightBlue;
   animation-duration: 2s;
-
-  .landingText {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-  }
 
   .landingHeading
   {
