@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
   font-family: "Courier New", Courier, Arial, Helvetica, sans-serif;
   background: #f4f4f4; }
 
@@ -9,7 +10,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column; }
+  flex-flow: column;
+  width: 100vw;
+  padding: 2vw 0 2vh 2vh; }
 
 section {
   width: 80vw;
@@ -30,10 +33,10 @@ section {
 
 /**** Landing Section *****/
 nav {
-  width: 100%;
+  width: 100vw;
   background: #262626; }
   nav ul {
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -250,10 +253,10 @@ dd {
   margin-bottom: 35px; }
 
 footer {
-  width: 100%;
+  width: 100vw;
   background: #262626;
   color: #f4f4f4;
-  padding: 40px;
+  padding: 40px 0 40px 0;
   padding-bottom: 10px;
   border-top: solid 5px #74C2E1;
   display: grid;
@@ -359,10 +362,10 @@ footer {
   .logoContainer {
     border: none; } }
 
-@media (max-width: 310px) {
+@media (max-width: 450px) {
   #jsonContainer #jsonLogo {
-    height: 150px;
-    width: 300px; }
+    height: 100px;
+    width: 200px; }
   #nodeContainer #nodeLogo {
-    height: 150px;
-    width: 245px; } }
+    height: 100px;
+    width: 163px; } }
