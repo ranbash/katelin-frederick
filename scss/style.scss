@@ -43,7 +43,7 @@ section {
 
 /**** Landing Section *****/
 
-nav {
+.mainNav {
   width: 100vw;
   background: $darkGrey;
 
@@ -97,6 +97,7 @@ nav {
   text-transform: uppercase;
   text-shadow: 0 0 10px $darkGrey;
   border-bottom: 5px solid $lightBlue;
+  visibility: hidden;
   animation-duration: 2s;
 
   .landingHeading
@@ -113,10 +114,12 @@ nav {
 
 #aboutMeSection  {
   h1 {
+    visibility: hidden;
     animation-duration: 2s;
   }
 
   p {
+    visibility: hidden;
     animation-duration: 2s;
   }
 }
@@ -125,6 +128,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
   margin: 50px 0 100px 0;
   animation-duration: 2s;
 
@@ -139,6 +143,7 @@ nav {
 /***** Skills Section *****/
 
 #skillsSection h1{
+  visibility: hidden;
   animation-duration: 2s;
 }
 
@@ -148,6 +153,7 @@ nav {
 
 #currentSkillsWrapper {
   width: 80vw;
+  visibility: hidden;
   animation-duration: 2s;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,6 +164,7 @@ nav {
 
 #workingSkillsWrapper {
   width: 80vw;
+  visibility: hidden;
   animation-duration: 2s;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -168,6 +175,7 @@ nav {
 }
 
 dl {
+  visibility: hidden;
   animation-duration: 2s;
 }
 
@@ -175,16 +183,19 @@ dl {
 
 #whatsNextSection {
   h1 {
+    visibility: hidden;
     animation-duration: 2s;
   }
 
   p{
+    visibility: hidden;
     animation-duration: 2s;
   }
 }
 
 #nextSkillsWrapper {
   width: 80vw;
+  visibility: hidden;
   animation-duration: 2s;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -362,39 +373,15 @@ footer {
   width: 100vw;
   background: $darkGrey;
   color: #f4f4f4;
-  padding: 40px 0 40px 0;
+  padding: 40px 0 0 40px;
   padding-bottom: 10px;
   border-top: solid 5px $lightBlue;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "contact contact navLinks"
-    "contact contact navLinks"
+    "con con navLink"
+    "con con navLink"
     "copyright copyright copyright";
-}
-
-.navContainer {
-  grid-area: navLinks;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footerNav {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-
-  a {
-    text-decoration: none;
-    color: $offWhite;
-    font-size: 20px;
-    margin: 7px;
-
-    &:hover {
-      color: $lightBlue;
-    }
-  }
 }
 
 #contactContainer {
@@ -410,7 +397,31 @@ footer {
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+}
+
+.navContainer {
+  grid-area: navLink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footerNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    a {
+      text-decoration: none;
+      color: $offWhite;
+      font-size: 20px;
+      margin: 7px;
+
+      &:hover {
+        color: $lightBlue;
+      }
+    }
+  }
 }
 
 #linkedInLink {

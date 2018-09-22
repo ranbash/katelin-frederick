@@ -32,22 +32,22 @@ section {
   margin: 50px 0 50px 0; }
 
 /**** Landing Section *****/
-nav {
+.mainNav {
   width: 100vw;
   background: #262626; }
-  nav ul {
+  .mainNav ul {
     width: 80vw;
     margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: space-around; }
-    nav ul li {
+    .mainNav ul li {
       list-style: none;
       display: inline-block;
       padding: 15px; }
-      nav ul li:hover {
+      .mainNav ul li:hover {
         background: #8C8984; }
-      nav ul li a {
+      .mainNav ul li a {
         text-decoration: none;
         color: #fff;
         font-size: 20px; }
@@ -76,6 +76,7 @@ nav {
   text-transform: uppercase;
   text-shadow: 0 0 10px #262626;
   border-bottom: 5px solid #74C2E1;
+  visibility: hidden;
   animation-duration: 2s; }
   #landing .landingHeading {
     font-size: 6em; }
@@ -84,15 +85,18 @@ nav {
 
 /***** About Me Section *****/
 #aboutMeSection h1 {
+  visibility: hidden;
   animation-duration: 2s; }
 
 #aboutMeSection p {
+  visibility: hidden;
   animation-duration: 2s; }
 
 .imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
   margin: 50px 0 100px 0;
   animation-duration: 2s; }
   .imageContainer img {
@@ -103,6 +107,7 @@ nav {
 
 /***** Skills Section *****/
 #skillsSection h1 {
+  visibility: hidden;
   animation-duration: 2s; }
 
 .logoWrapper {
@@ -110,6 +115,7 @@ nav {
 
 #currentSkillsWrapper {
   width: 80vw;
+  visibility: hidden;
   animation-duration: 2s;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -117,23 +123,28 @@ nav {
 
 #workingSkillsWrapper {
   width: 80vw;
+  visibility: hidden;
   animation-duration: 2s;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "boot node" "json ajax" "react react"; }
 
 dl {
+  visibility: hidden;
   animation-duration: 2s; }
 
 /***** Whats Next Section *****/
 #whatsNextSection h1 {
+  visibility: hidden;
   animation-duration: 2s; }
 
 #whatsNextSection p {
+  visibility: hidden;
   animation-duration: 2s; }
 
 #nextSkillsWrapper {
   width: 80vw;
+  visibility: hidden;
   animation-duration: 2s;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -256,30 +267,12 @@ footer {
   width: 100vw;
   background: #262626;
   color: #f4f4f4;
-  padding: 40px 0 40px 0;
+  padding: 40px 0 0 40px;
   padding-bottom: 10px;
   border-top: solid 5px #74C2E1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "contact contact navLinks" "contact contact navLinks" "copyright copyright copyright"; }
-
-.navContainer {
-  grid-area: navLinks;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.footerNav {
-  display: flex;
-  flex-flow: column;
-  justify-content: center; }
-  .footerNav a {
-    text-decoration: none;
-    color: #f4f4f4;
-    font-size: 20px;
-    margin: 7px; }
-    .footerNav a:hover {
-      color: #74C2E1; }
+  grid-template-areas: "con con navLink" "con con navLink" "copyright copyright copyright"; }
 
 #contactContainer {
   grid-area: contact;
@@ -292,8 +285,25 @@ footer {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  align-items: center;
-  width: 100%; }
+  align-items: center; }
+
+.navContainer {
+  grid-area: navLink;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navContainer .footerNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
+    .navContainer .footerNavigation a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-size: 20px;
+      margin: 7px; }
+      .navContainer .footerNavigation a:hover {
+        color: #74C2E1; }
 
 #linkedInLink {
   color: #007fb2; }
