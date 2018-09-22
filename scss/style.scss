@@ -1,0 +1,523 @@
+// Files to Import
+
+@import "variables";
+
+/***** Styles *****/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, Arial, Helvetica, sans-serif;
+  background: $offWhite;
+}
+
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+section {
+  width: 80vw;
+  font-size: 1.2em;
+}
+
+.sectionHeading {
+  font-size: 2.5em;
+  background: $darkGrey;
+  color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 5px solid $lightBlue;
+  text-transform: uppercase;
+}
+
+.subHeading {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin: 50px 0 50px 0;
+}
+
+/**** Landing Section *****/
+
+nav {
+  width: 100%;
+  background: $darkGrey;
+
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 15px;
+
+      &:hover {
+        background: $lightGrey;
+      }
+
+      a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background: $darkGrey;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  display: none;
+}
+
+#landing {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/landingImage.jpg');
+  repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px $darkGrey;
+  border-bottom: 5px solid $lightBlue;
+  animation-duration: 2s;
+
+  .landingText {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .landingHeading
+  {
+    font-size: 6em;
+  }
+  h5
+  {
+    font-size: 2.5em;
+  }
+}
+
+/***** About Me Section *****/
+
+#aboutMeSection  {
+  h1 {
+    animation-duration: 2s;
+  }
+
+  p {
+    animation-duration: 2s;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 100px 0;
+  animation-duration: 2s;
+
+  img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px solid $lightBlue;
+  }
+}
+
+/***** Skills Section *****/
+
+#skillsSection h1{
+  animation-duration: 2s;
+}
+
+.logoWrapper {
+  margin: 50px 0 150px 0;
+}
+
+#currentSkillsWrapper {
+  width: 80vw;
+  animation-duration: 2s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "git html css"
+    "sass javaScript jquery";
+}
+
+#workingSkillsWrapper {
+  width: 80vw;
+  animation-duration: 2s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "boot node"
+    "json ajax"
+    "react react";
+}
+
+dl {
+  animation-duration: 2s;
+}
+
+/***** Whats Next Section *****/
+
+#whatsNextSection {
+  h1 {
+    animation-duration: 2s;
+  }
+
+  p{
+    animation-duration: 2s;
+  }
+}
+
+#nextSkillsWrapper {
+  width: 80vw;
+  animation-duration: 2s;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "php python"
+    "gem django";
+}
+
+#gitContainer {
+  grid-area: git;
+
+  #gitLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#htmlContainer {
+  grid-area: html;
+
+  #htmlLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#cssContainer {
+  grid-area: css;
+
+  #cssLogo {
+    height: 200px;
+    width: 142px;
+  }
+}
+
+#sassContainer {
+  grid-area: sass;
+
+  #sassLogo {
+    height: 200px;
+    width: 267px;
+  }
+}
+
+#javaScriptContainer {
+  grid-area: javaScript;
+
+  #javaScriptLogo {
+    height: 200px;
+    width: 356px;
+  }
+}
+
+#jQueryContainer {
+  grid-area: jquery;
+
+  #jQueryLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#bootstrapContainer {
+  grid-area: boot;
+
+  #bootStrapLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#nodeContainer {
+  grid-area: node;
+
+  #nodeLogo {
+    height: 200px;
+    width: 326px;
+  }
+}
+
+#jsonContainer {
+  grid-area: json;
+
+  #jsonLogo {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+#ajaxContainer {
+  grid-area: ajax;
+
+  #ajaxLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#reactContainer {
+  grid-area: react;
+
+  #reactLogo {
+    height: 200px;
+    width: 283px;
+  }
+}
+
+#phpContainer {
+  grid-area: php;
+
+  #phpLogo {
+    height: 200px;
+    width: 142px;
+  }
+}
+
+#pythonContainer {
+  grid-area: python;
+
+  #pythonLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#rubyContainer {
+  grid-area: gem;
+
+  #rubyLogo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+#djangoContainer {
+  grid-area: django;
+
+  #djangoLogo {
+    height: 440px;
+    width: 200px;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border: 3px solid $lightGrey;
+  padding: 10px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.logoHeading {
+  font-size: 1.5em;
+}
+
+.skillsList {
+  font-size: 1.4em;
+  margin: 10px;
+  text-decoration: underline $lightBlue;
+}
+
+dd {
+  margin-bottom: 35px;
+}
+
+//**** Footer Section ****//
+
+footer {
+  width: 100%;
+  background: $darkGrey;
+  color: #f4f4f4;
+  padding: 40px;
+  padding-bottom: 10px;
+  border-top: solid 5px $lightBlue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "contact contact navLinks"
+    "contact contact navLinks"
+    "copyright copyright copyright";
+}
+
+.navContainer {
+  grid-area: navLinks;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerNav {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: $offWhite;
+    font-size: 20px;
+    margin: 7px;
+
+    &:hover {
+      color: $lightBlue;
+    }
+  }
+}
+
+#contactContainer {
+  grid-area: contact;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+#linksContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#linkedInLink {
+  color: rgb(0, 127, 178);
+}
+
+#gitHubLink {
+  color: rgb(102, 43, 129);
+}
+
+#twitterLink {
+  color: rgb(0, 172, 237);
+}
+
+#copyright {
+  grid-area: copyright;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8em;
+}
+
+#email {
+  font-size: 20px;
+}
+
+/***** Media Queries *****/
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+
+  #landing h5 {
+    font-size: 1.5em;
+  }
+
+  #landing .landingHeading {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 824px) {
+  .mainNav a{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  #currentSkillsWrapper {
+    width: 80vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #workingSkillsWrapper {
+    width: 80vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nextSkillsWrapper {
+    width: 80vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoContainer {
+    border: none;
+  }
+}
+
+@media (max-width: 310px) {
+  #jsonContainer #jsonLogo {
+    height: 150px;
+    width: 300px;
+  }
+
+  #nodeContainer #nodeLogo {
+    height: 150px;
+    width: 245px;
+  }
+}
