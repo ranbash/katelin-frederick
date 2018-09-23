@@ -1,9 +1,7 @@
 //  Collapse Navigation on Smaller Devices
-$('.menu').click(function() {
-  $('ul').toggleClass('active');
+$('.menu').click(function () {
+  $('.mainNav ul').toggleClass('active');
 });
-
-
 
 //  Function to Add Animations to Elements
 function animate(element, animation) {
