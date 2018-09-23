@@ -486,6 +486,17 @@ footer {
 }
 
 @media (max-width: 650px) {
+  #landing {
+    .landingHeading
+    {
+      font-size: 4em;
+    }
+    h5
+    {
+      font-size: 2em;
+    }
+  }
+
   #currentSkillsWrapper {
     width: 80vw;
     display: flex;
@@ -523,6 +534,17 @@ footer {
 }
 
 @media (max-width: 450px) {
+  #landing {
+    .landingHeading
+    {
+      font-size: 4em;
+    }
+    h5
+    {
+      font-size: 2em;
+    }
+  }
+
   #jsonContainer #jsonLogo {
     height: 100px;
     width: 200px;
