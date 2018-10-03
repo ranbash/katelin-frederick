@@ -24,12 +24,13 @@ section {
   color: #f4f4f4;
   padding: 10px;
   border-bottom: 5px solid #74C2E1;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 75px; }
 
 .subHeading {
   font-size: 1.8em;
   text-transform: uppercase;
-  margin: 50px 0 50px 0; }
+  margin: 100px 0 50px 0; }
 
 /**** Landing Section *****/
 .mainNav {
@@ -78,27 +79,30 @@ section {
   text-shadow: 0 0 10px #262626;
   border-bottom: 5px solid #74C2E1;
   visibility: hidden;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  margin-bottom: 100px; }
   #landing .landingHeading {
     font-size: 6em; }
   #landing h5 {
     font-size: 2.5em; }
 
 /***** About Me Section *****/
-#aboutMeSection h1 {
+#aboutMeSection #aboutMeHeader {
   visibility: hidden;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  margin-top: 50px; }
 
 #aboutMeSection p {
   visibility: hidden;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  margin-top: 50px; }
 
 .imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  margin: 50px 0 100px 0;
+  margin: 100px 0 150px 0;
   animation-duration: 2s; }
   .imageContainer img {
     border-radius: 50%;
@@ -106,155 +110,28 @@ section {
     width: 200px;
     border: 5px solid #74C2E1; }
 
+.carousel {
+  margin-top: 100px; }
+
 /***** Skills Section *****/
 #skillsSection h1 {
   visibility: hidden;
   animation-duration: 2s; }
 
-.logoWrapper {
-  margin: 50px 0 150px 0; }
-
-#currentSkillsWrapper {
-  width: 80vw;
-  visibility: hidden;
-  animation-duration: 2s;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "git html css" "sass javaScript jquery"; }
-
-#workingSkillsWrapper {
-  width: 80vw;
-  visibility: hidden;
-  animation-duration: 2s;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "boot node" "json ajax" "react react"; }
-
 dl {
   visibility: hidden;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  margin-top: 50px; }
 
 /***** Whats Next Section *****/
-#whatsNextSection h1 {
-  visibility: hidden;
-  animation-duration: 2s; }
-
-#whatsNextSection p {
-  visibility: hidden;
-  animation-duration: 2s; }
-
-#nextSkillsWrapper {
-  width: 80vw;
-  visibility: hidden;
-  animation-duration: 2s;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "php python" "gem django"; }
-
-#gitContainer {
-  grid-area: git; }
-  #gitContainer #gitLogo {
-    height: 200px;
-    width: 200px; }
-
-#htmlContainer {
-  grid-area: html; }
-  #htmlContainer #htmlLogo {
-    height: 200px;
-    width: 200px; }
-
-#cssContainer {
-  grid-area: css; }
-  #cssContainer #cssLogo {
-    height: 200px;
-    width: 142px; }
-
-#sassContainer {
-  grid-area: sass; }
-  #sassContainer #sassLogo {
-    height: 200px;
-    width: 267px; }
-
-#javaScriptContainer {
-  grid-area: javaScript; }
-  #javaScriptContainer #javaScriptLogo {
-    height: 200px;
-    width: 356px; }
-
-#jQueryContainer {
-  grid-area: jquery; }
-  #jQueryContainer #jQueryLogo {
-    height: 200px;
-    width: 200px; }
-
-#bootstrapContainer {
-  grid-area: boot; }
-  #bootstrapContainer #bootStrapLogo {
-    height: 200px;
-    width: 200px; }
-
-#nodeContainer {
-  grid-area: node; }
-  #nodeContainer #nodeLogo {
-    height: 200px;
-    width: 326px; }
-
-#jsonContainer {
-  grid-area: json; }
-  #jsonContainer #jsonLogo {
-    height: 200px;
-    width: 400px; }
-
-#ajaxContainer {
-  grid-area: ajax; }
-  #ajaxContainer #ajaxLogo {
-    height: 200px;
-    width: 200px; }
-
-#reactContainer {
-  grid-area: react; }
-  #reactContainer #reactLogo {
-    height: 200px;
-    width: 283px; }
-
-#phpContainer {
-  grid-area: php; }
-  #phpContainer #phpLogo {
-    height: 200px;
-    width: 142px; }
-
-#pythonContainer {
-  grid-area: python; }
-  #pythonContainer #pythonLogo {
-    height: 200px;
-    width: 200px; }
-
-#rubyContainer {
-  grid-area: gem; }
-  #rubyContainer #rubyLogo {
-    height: 200px;
-    width: 200px; }
-
-#djangoContainer {
-  grid-area: django; }
-  #djangoContainer #djangoLogo {
-    height: 440px;
-    width: 200px; }
-
-.logoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  border: 3px solid #8C8984;
-  padding: 10px; }
-
-.logo {
-  width: 200px;
-  height: 200px; }
-
-.logoHeading {
-  font-size: 1.5em; }
+#whatsNextSection {
+  margin: 150px 0 100px 0; }
+  #whatsNextSection h1 {
+    visibility: hidden;
+    animation-duration: 2s; }
+  #whatsNextSection p {
+    visibility: hidden;
+    animation-duration: 2s; }
 
 .skillsList {
   font-size: 1.4em;
@@ -263,6 +140,13 @@ dl {
 
 dd {
   margin-bottom: 35px; }
+
+#cardContainer {
+  align-items: center;
+  visibility: hidden; }
+
+.card {
+  margin-bottom: 50px; }
 
 footer {
   width: 100vw;
@@ -355,40 +239,14 @@ footer {
     font-size: 4em; }
   #landing h5 {
     font-size: 2em; }
-  #currentSkillsWrapper {
-    width: 80vw;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; }
-  #workingSkillsWrapper {
-    width: 80vw;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; }
-  #nextSkillsWrapper {
-    width: 80vw;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; }
   footer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center; }
-  .logoContainer {
-    border: none; } }
+    align-items: center; } }
 
 @media (max-width: 450px) {
   #landing .landingHeading {
     font-size: 4em; }
   #landing h5 {
-    font-size: 2em; }
-  #jsonContainer #jsonLogo {
-    height: 100px;
-    width: 200px; }
-  #nodeContainer #nodeLogo {
-    height: 100px;
-    width: 163px; } }
+    font-size: 2em; } }

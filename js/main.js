@@ -5,7 +5,7 @@ $('.menu').click(function () {
 
 //  Function to Add Animations to Elements
 function animate(element, animation) {
-  $(element).addClass('animated ' +animation);
+  $(element).addClass('animated ' + animation);
 }
 
 /***** Add Animations to Elements *****/
@@ -15,9 +15,9 @@ $('#landing').waypoint(function () {
   animate('#landing', "fadeIn")
 }, {offset: '75%'});
 
-$('#aboutMeSection h1').waypoint(function () {
-  $('#aboutMeSection h1').css('visibility', 'visible');
-  animate('#aboutMeSection h1', "slideInRight")
+$('#aboutMeHeader').waypoint(function () {
+  $('#aboutMeHeader').css('visibility', 'visible');
+  animate('#aboutMeHeader', "slideInRight")
 }, {offset: '75%'});
 
 $('#aboutMeSection p').waypoint(function () {
@@ -35,16 +35,6 @@ $('#skillsSection h1').waypoint(function () {
   animate('#skillsSection h1', "swing")
 }, {offset: '75%'});
 
-$('#currentSkillsWrapper').waypoint(function () {
-  $('#currentSkillsWrapper').css('visibility', 'visible');
-  animate('#currentSkillsWrapper', "fadeInUp")
-}, {offset: '75%'});
-
-$('#workingSkillsWrapper').waypoint(function () {
-  $('#workingSkillsWrapper').css('visibility', 'visible');
-  animate('#workingSkillsWrapper', "fadeInLeft")
-}, {offset: '75%'});
-
 $('dl').waypoint(function () {
   $('dl').css('visibility', 'visible');
   animate('dl', "fadeInRight")
@@ -60,7 +50,70 @@ $('#whatsNextSection p').waypoint(function () {
   animate('#whatsNextSection p', "fadeIn")
 }, {offset: '75%'});
 
-$('#nextSkillsWrapper').waypoint(function () {
-  $('#nextSkillsWrapper').css('visibility', 'visible');
-  animate('#nextSkillsWrapper', "zoomIn")
+$('#myWorkSection h1').waypoint(function () {
+  $('#myWorkSection h1').css('visibility', 'visible');
+  animate('#myWorkSection h1', "flash")
 }, {offset: '75%'});
+
+$('#cardContainer').waypoint(function () {
+  $('#cardContainer').css('visibility', 'visible');
+  animate('#cardContainer', "lightSpeedIn")
+}, {offset: '75%'});
+
+
+/***** Animate Scrolling *****/
+
+$('#aboutMeNav').click(function() {
+  let about = $('#aboutMeSection').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: about
+    },
+    2500
+  );
+});
+
+$('#skillsNav').click(function() {
+  let skills = $('#skillsSection').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: skills
+    },
+    2500
+  );
+});
+
+$('#workNav').click(function() {
+  let work = $('#myWorkSection').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: work
+    },
+    2500
+  );
+});
+
+$('#nextNav').click(function() {
+  let next = $('#whatsNextSection').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: next
+    },
+    2500
+  );
+});
+
+$('#contactNav').click(function() {
+  let contact = $('#contactSection').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: contact
+    },
+    2500
+  );
+});
