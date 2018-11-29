@@ -8,6 +8,17 @@ function animate(element, animation) {
   $(element).addClass('animated ' + animation);
 }
 
+// Navigation
+$('.fa-times').click(function() {
+  $('.sidebarMenu').addClass('hideMenu');
+  $('.toggleMenu').addClass('opacityOne');
+});
+
+$('.toggleMenu').click(function() {
+  $('.sidebarMenu').removeClass('hideMenu');
+  $('.toggleMenu').removeClass('opacityOne');
+});
+
 /***** Add Animations to Elements *****/
 
 $('#landing').waypoint(function () {
@@ -23,11 +34,6 @@ $('#aboutMeHeader').waypoint(function () {
 $('#aboutMeSection p').waypoint(function () {
   $('#aboutMeSection p').css('visibility', 'visible');
   animate('#aboutMeSection p', "slideInLeft")
-}, {offset: '75%'});
-
-$('.imageContainer').waypoint(function () {
-  $('.imageContainer').css('visibility', 'visible');
-  animate('.imageContainer', "bounceIn")
 }, {offset: '75%'});
 
 $('#skillsSection h1').waypoint(function () {
@@ -96,12 +102,12 @@ $('#workNav').click(function() {
   );
 });
 
-$('#nextNav').click(function() {
-  let next = $('#whatsNextSection').position().top;
+$('#homeNav').click(function() {
+  let home = $('#landing').position().top;
 
   $('html, body').animate(
     {
-      scrollTop: next
+      scrollTop: home
     },
     2500
   );

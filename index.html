@@ -21,51 +21,31 @@
 
     <!-- Main Navigation -->
 
-    <nav class="mainNav">
+    <i class="fa fa-bars toggleMenu"></i>
 
-      <div class="toggle">
-        <i class="fas fa-bars menu" aria-hidden="true"></i>
-      </div>
+    <div class="sidebarMenu">
+      <i class="fa fa-times"></i>
 
-      <ul>
-        <li><a href="#aboutMeSection" id="aboutMeNav">About Me</a></li>
-        <li><a href="#skillsSection" id="skillsNav">Skills</a></li>
-        <li><a href="#myWorkSection" id="workNav">My Work</a></li>
-        <li><a href="#whatsNextSection" id="nextNav">Whats Next</a></li>
-        <li><a href="#contactSection" id="contactNav">Contact</a></li>
-        <li><a href="Resume.pdf" id="resumeNav" target="_blank">Resume</a></li>
+      <ul class="navigation">
+        <a href="#landing" class="navLink" id="homeNav"><li class="navItem"><i class="fas fa-home navIcon"></i>HOME</li></a>
+        <a href="#skillsSection" class="navLink" id="skillsNav"><li class="navItem"><i class="fas fa-cog navIcon"></i>SKILLS</li></a>
+        <a href="#myWorkSection" class="navLink" id="workNav"><li class="navItem"><i class="fas fa-briefcase navIcon"></i>MY WORK</li></a>
+        <a href="#aboutMeSection" class="navLink" id="aboutMeNav"><li class="navItem"><i class="fas fa-user-alt navIcon"></i>ABOUT ME</li></a>
+        <a href="#contactSection" class="navLink" id="contactNav"><li class="navItem"><i class="fas fa-phone navIcon"></i>CONTACT</li></a>
+        <a href="Resume.pdf" class="navLink" id="resumeNav" target="_blank"><li class="navItem"><i class="fas fa-file navIcon"></i>RESUME</li></a>
       </ul>
-    </nav>
+    </div>
 
     <!-- Landing Image and Text -->
   <div id="landing">
+     <div class="imageContainer">
+       <img src="./img/profilePic.jpg" alt="Picture of Katelin Frederick">
+     </div>
     <header class="landingHeading">Katelin Frederick</header>
-    <h5>Front End Developer in the Making</h5>
+    <h5>Front End Developer</h5>
   </div>
 
   <div class="pageWrapper">
-
-    <!--***** About Me Section *****-->
-
-    <section id="aboutMeSection">
-      <h1 class="sectionHeading" id="aboutMeHeader">About Me</h1>
-      <p>Hello, my name is Katelin Frederick and I am a 24 year old self-taught front-end developer currently located in Adrian, Michigan.
-         I am currently hoping to find an opportunity to begin my career in the web industry and am willing to relocate to do so.
-         Currently I work at an automotive plant for a company named Martinrea as an extrusion operator.
-         When I'm not at work or focusing on expanding my development skills, I enjoy playing guitar and listening to music.
-         I love to learn new things and expand upon skills I already have.  I have an associates degree in Fine Arts from Jackson College.
-         I intended to continue my education after I recieved that degree, so I went back to pursue a degree in Computer Programming.
-         Unfortunately, I wasn't able to complete that degree for financial reasons, however, the courses I was able to take during this time made me
-         develop a love for programming and development.  After I left school, I decided to pursue a career in the industry and began
-         to continue learning on my own.
-       </p>
-
-      <!-- Picture of Me -->
-       <div class="imageContainer">
-         <img src="./img/profilePic.jpg" alt="Picture of Katelin Frederick">
-       </div>
-
-    </section> <!-- End of About Me Section -->
 
     <!--***** Skills Section *****-->
 
@@ -156,18 +136,6 @@
 
     </section> <!-- End of Skills Section -->
 
-    <!--***** Whats Next Section *****-->
-
-    <section id="whatsNextSection">
-      <h1 class="sectionHeading">Whats Next for Me?</h1>
-      <p>
-        So where do I hope to go from here?  I feel that finding the opportunity to start a career in the development industry is
-        the next natural step for me.  I feel that by working in the industry I will be able to take my skills
-        to the next level by working in a professional development environment with other developers.  I hope to expand my knowledge of the front-end
-        skills I currently have and add React to my set of skills as well as begin learning more about the back end side of things.
-      </p>
-    </section> <!-- End of Whats Next Section -->
-
     <!--***** My Work Section *****-->
     <section id="myWorkSection">
       <h1 class="sectionHeading">My Work</h1>
@@ -188,7 +156,7 @@
                   <li>javascript</li>
                   <li>iTunes API</li>
                 </ul>
-                <a href="https://katelin-frederick.github.io/iTunesSearch/" target="_blank">GitHubPage for this Project</a>
+                <a href="https://katelin-frederick.github.io/iTunesSearch/" target="_blank">View Project</a>
               </div>
             </div>
           </div>
@@ -209,7 +177,7 @@
                   <li>Bootstrap</li>
                   <li>jQuery</li>
                 </ul>
-                <a href="https://katelin-frederick.github.io/threejsNavDemo/" target="_blank">GitHubPage for this Project</a>
+                <a href="https://katelin-frederick.github.io/threejsNavDemo/" target="_blank">View Project</a>
               </div>
             </div>
           </div>
@@ -227,13 +195,42 @@
                   <li>javascript</li>
                   <li>React</li>
                  </ul>
-                 <a href="https://katelin-frederick.github.io/pokedex/" target="_blank">GitHubPage for this Project</a>
+                 <a href="https://katelin-frederick.github.io/pokedex/" target="_blank">View Project</a>
               </div>
             </div>
           </div>
         </div>
     </div>
     </section>
+
+    <!--***** About Me Section *****-->
+
+    <section id="aboutMeSection">
+      <h1 class="sectionHeading" id="aboutMeHeader">About Me</h1>
+      <p>Hello, my name is Katelin Frederick and I am a 24 year old self-taught front-end developer currently located in Adrian, Michigan.
+         I am currently hoping to find an opportunity to begin my career in the web industry and am willing to relocate to do so.
+         Currently I work at an automotive plant for a company named Martinrea as an extrusion operator.
+         When I'm not at work or focusing on expanding my development skills, I enjoy playing guitar and listening to music.
+         I love to learn new things and expand upon skills I already have.  I have an associates degree in Fine Arts from Jackson College.
+         I intended to continue my education after I recieved that degree, so I went back to pursue a degree in Computer Programming.
+         Unfortunately, I wasn't able to complete that degree for financial reasons, however, the courses I was able to take during this time made me
+         develop a love for programming and development.  After I left school, I decided to pursue a career in the industry and began
+         to continue learning on my own.
+       </p>
+
+    </section> <!-- End of About Me Section -->
+
+    <!--***** Whats Next Section *****-->
+
+    <section id="whatsNextSection">
+      <h1 class="sectionHeading">Whats Next for Me?</h1>
+      <p>
+        So where do I hope to go from here?  I feel that finding the opportunity to start a career in the development industry is
+        the next natural step for me.  I feel that by working in the industry I will be able to take my skills
+        to the next level by working in a professional development environment with other developers.  I hope to expand my knowledge of the front-end
+        skills I currently have and add React to my set of skills as well as begin learning more about the back end side of things.
+      </p>
+    </section> <!-- End of Whats Next Section -->
 
   </div> <!-- End of Page Wrapper -->
 
@@ -249,18 +246,6 @@
           <a href="https://twitter.com/KatieFrederick4" id="twitterLink" target="_blank"><i class="fab fa-twitter fa-3x" id="twitterIcon" area-hidden="true"></i></a>
         </div>
         <p id="email">Email: k.frederick94@gmail.com</p>
-      </div>
-
-      <!-- Page Navigation Links -->
-
-      <div class="navContainer">
-        <nav class="footerNavigation">
-          <a href="#aboutMeSection" class="navLink" id="aboutMeNav">About Me</a>
-          <a href="#myWorkSection" class="navLink" id="workNav">My Work</a>
-          <a href="#skillsSection" class="navLink" id="skillsNav">Skills</a>
-          <a href="#whatsNextSection" class="navLink" id="nextNav">Whats Next</a>
-          <a href="Resume.pdf" class="navLink" id="resumeNav" target="_blank">Resume</a>
-        </nav>
       </div>
 
       <div id="copyright">
