@@ -77,7 +77,7 @@ section {
   margin: 20px 0;
   display: block;
   width: 200px;
-  margin-left: 25px;
+  margin-left: 0px;
   padding-bottom: 30px;
   list-style: none;
   height: 100vh;
@@ -277,9 +277,10 @@ footer {
 
 @media (max-width: 450px) {
   .toggleMenu {
-    font-size: 2em !important; }
+    font-size: .8em !important; }
   .sidebarMenu {
-    width: 200px; }
+    width: 150px;
+    font-size: .5em; }
   #landing .landingHeading {
     font-size: 4em; }
   #landing h5 {
