@@ -244,6 +244,10 @@ footer {
   margin-top: 15px; }
 
 /***** Media Queries *****/
+@media (max-width: 824px) {
+  .mainNav a {
+    font-size: 15px; } }
+
 @media (max-width: 768px) {
   .toggle {
     display: block; }
@@ -260,10 +264,6 @@ footer {
   .landingHeading {
     font-size: 2.5em; } }
 
-@media (max-width: 824px) {
-  .mainNav a {
-    font-size: 15px; } }
-
 @media (max-width: 650px) {
   #landing .landingHeading {
     font-size: 4em; }
@@ -276,7 +276,17 @@ footer {
     align-items: center; } }
 
 @media (max-width: 450px) {
+  .toggleMenu {
+    font-size: 2em !important; }
+  .sidebarMenu {
+    width: 200px; }
   #landing .landingHeading {
     font-size: 4em; }
   #landing h5 {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .skillsItem {
+    flex-flow: column; }
+  .skillsLogo {
+    height: 150px; }
+  .skillsName {
+    font-size: 1em; } }
