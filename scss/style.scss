@@ -364,23 +364,10 @@ footer {
   .toggleMenu {
     font-size: .8em !important;
   }
-
   .sidebarMenu {
     width: 150px;
     font-size: .5em;
   }
-
-  #landing {
-    .landingHeading
-    {
-      font-size: 4em;
-    }
-    h5
-    {
-      font-size: 2em;
-    }
-  }
-
   .skillsItem {
     flex-flow: column;
   }
@@ -390,5 +377,15 @@ footer {
   }
   .skillsName {
     font-size: 1em;
+  }
+  #landing {
+    .landingHeading
+    {
+      font-size: 4em;
+    }
+    h5
+    {
+      font-size: 2em;
+    }
   }
 }

@@ -281,13 +281,13 @@ footer {
   .sidebarMenu {
     width: 150px;
     font-size: .5em; }
-  #landing .landingHeading {
-    font-size: 4em; }
-  #landing h5 {
-    font-size: 2em; }
   .skillsItem {
     flex-flow: column; }
   .skillsLogo {
     height: 150px; }
   .skillsName {
-    font-size: 1em; } }
+    font-size: 1em; }
+  #landing .landingHeading {
+    font-size: 4em; }
+  #landing h5 {
+    font-size: 2em; } }
