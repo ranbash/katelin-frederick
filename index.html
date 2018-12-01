@@ -20,16 +20,17 @@
   <!--***** Landing Section *****-->
 
     <!-- Main Navigation -->
-
-    <i class="fa fa-bars toggleMenu"></i>
+    <div class="toggleMenu">
+      <i class="fa fa-chevron-right toggleIcon"></i>
+    </div>
 
     <div class="sidebarMenu">
       <i class="fa fa-times"></i>
 
       <ul class="navigation">
         <a href="#landing" class="navLink" id="homeNav"><li class="navItem"><i class="fas fa-home navIcon"></i>HOME</li></a>
+        <a href="#myWorkSection" class="navLink" id="workNav"><li class="navItem"><i class="fas fa-briefcase navIcon"></i>My Work</li></a>
         <a href="#skillsSection" class="navLink" id="skillsNav"><li class="navItem"><i class="fas fa-cog navIcon"></i>SKILLS</li></a>
-        <a href="#myWorkSection" class="navLink" id="workNav"><li class="navItem"><i class="fas fa-briefcase navIcon"></i>MY WORK</li></a>
         <a href="#aboutMeSection" class="navLink" id="aboutMeNav"><li class="navItem"><i class="fas fa-user-alt navIcon"></i>ABOUT ME</li></a>
         <a href="#contactSection" class="navLink" id="contactNav"><li class="navItem"><i class="fas fa-phone navIcon"></i>CONTACT</li></a>
         <a href="Resume.pdf" class="navLink" id="resumeNav" target="_blank"><li class="navItem"><i class="fas fa-file navIcon"></i>RESUME</li></a>
@@ -46,95 +47,6 @@
   </div>
 
   <div class="pageWrapper">
-
-    <!--***** Skills Section *****-->
-
-    <section id="skillsSection">
-      <h1 class="sectionHeading">Skills</h1>
-
-      <!-- Current Skills Carousel -->
-
-      <div id="carouselSlider" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselSlider" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselSlider" data-slide-to="1"></li>
-          <li data-target="#carouselSlider" data-slide-to="2"></li>
-          <li data-target="#carouselSlider" data-slide-to="3"></li>
-          <li data-target="#carouselSlider" data-slide-to="4"></li>
-          <li data-target="#carouselSlider" data-slide-to="5"></li>
-          <li data-target="#carouselSlider" data-slide-to="6"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="./img/gitSlide.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/htmlSlide.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/cssSlide.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/sassSlide.jpg" alt="Fourth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/javaScriptSlide.jpg" alt="Fifth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/jquerySlide.jpg" alt="Sixth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/bootstrapSlide.jpg" alt="Seventh slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselSlider" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselSlider" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <!-- Other Skills Section -->
-      <h3 class="subHeading">Other Skills</h3>
-
-        <!-- List of Other Skills -->
-
-        <dl>
-          <dt class="skillsList">Communication</dt>
-            <dd>
-              I understand that communication is an important tool in the workplace.
-              Keeping everyone on the same page is paramount to being efficient and
-              meeting deadlines.
-            </dd>
-          <dt class="skillsList">Time Management</dt>
-            <dd>
-              I like to plan projects out before I begin developing them and set
-              a timeline for different stages of development to keep me on track.
-            </dd>
-          <dt class="skillsList">Organized</dt>
-            <dd>
-              Staying organized is an important part of being efficient.  Keeping files
-              organized helps projects run much easier and helps make working on projects with
-              others cleaner and clearer for all involved.
-            </dd>
-          <dt class="skillsList">Work Well With Others</dt>
-            <dd>
-              One of the great things about the development industry is sharing ideas and working with others.
-              Working with others is great for sparking creativity and being efficient and managing
-              time to meet deadlines.  I enjoy working in teams because it allows me to look at things from a different
-              perspective and learn new things from others.
-            </dd>
-          <dt class="skillsList">Drive to Learn</dt>
-            <dd>
-              Another great thing about the development industry is that there is always something new to learn.
-              I have always loved learning new things and expanding my knowledge of things I already know.
-            </dd>
-        </dl>
-
-    </section> <!-- End of Skills Section -->
 
     <!--***** My Work Section *****-->
     <section id="myWorkSection">
@@ -203,11 +115,87 @@
     </div>
     </section>
 
+    <!--***** Skills Section *****-->
+
+    <section id="skillsSection">
+      <h1 class="sectionHeading">Skills</h1>
+      <div id="skillsContainer">
+        <ul id="skillsList">
+          <li class="skillsItem">
+            <img src="./img/htmlLogo.png" alt="HTML Logo" class="skillsLogo">
+            <h3 class="skillsName">HTML</h3>
+          </li>
+          <li class="skillsItem">
+            <img src="./img/cssLogo.png" alt="CSSL Logo" class="skillsLogo">
+            <h3 class="skillsName">CSS</h3>
+          </li>
+          <li class="skillsItem">
+            <img src="./img/javascriptLogo.png" alt="Javascript Logo" class="skillsLogo">
+            <h3 class="skillsName">Javascript</h3>
+          </li>
+          <li class="skillsItem">
+            <img src="./img/gitLogo.png" alt="Git Logo" class="skillsLogo">
+            <h3 class="skillsName">Git</h3>
+          </li>
+          <li class="skillsItem">
+            <img src="./img/bootstrapLogo.png" alt="Bootstrap Logo" class="skillsLogo">
+            <h3 class="skillsName">Bootstrap</h3>
+          </li>
+          <li class="skillsItem">
+            <img src="./img/jqueryLogo.png" alt="jQuery Logo" class="skillsLogo">
+            <h3 class="skillsName">jQuery</h3>
+          </li>
+          <li class="skillsItem">
+            <img src="./img/sassLogo.png" alt="Sass Logo" class="skillsLogo">
+            <h3 class="skillsName">SASS</h3>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Other Skills Section -->
+      <h3 class="subHeading">Other Skills</h3>
+
+        <!-- List of Other Skills -->
+
+        <dl>
+          <dt class="skillsList">Communication</dt>
+            <dd>
+              I understand that communication is an important tool in the workplace.
+              Keeping everyone on the same page is paramount to being efficient and
+              meeting deadlines.
+            </dd>
+          <dt class="skillsList">Time Management</dt>
+            <dd>
+              I like to plan projects out before I begin developing them and set
+              a timeline for different stages of development to keep me on track.
+            </dd>
+          <dt class="skillsList">Organized</dt>
+            <dd>
+              Staying organized is an important part of being efficient.  Keeping files
+              organized helps projects run much easier and helps make working on projects with
+              others cleaner and clearer for all involved.
+            </dd>
+          <dt class="skillsList">Work Well With Others</dt>
+            <dd>
+              One of the great things about the development industry is sharing ideas and working with others.
+              Working with others is great for sparking creativity and being efficient and managing
+              time to meet deadlines.  I enjoy working in teams because it allows me to look at things from a different
+              perspective and learn new things from others.
+            </dd>
+          <dt class="skillsList">Drive to Learn</dt>
+            <dd>
+              Another great thing about the development industry is that there is always something new to learn.
+              I have always loved learning new things and expanding my knowledge of things I already know.
+            </dd>
+        </dl>
+
+    </section> <!-- End of Skills Section -->
+
     <!--***** About Me Section *****-->
 
     <section id="aboutMeSection">
       <h1 class="sectionHeading" id="aboutMeHeader">About Me</h1>
-      <p>Hello, my name is Katelin Frederick and I am a 24 year old self-taught front-end developer currently located in Adrian, Michigan.
+      <p>Hello, my name is Katelin Frederick and I am a 24 year old self-taught front-end developer located in Adrian, Michigan.
          I am currently hoping to find an opportunity to begin my career in the web industry and am willing to relocate to do so.
          Currently I work at an automotive plant for a company named Martinrea as an extrusion operator.
          When I'm not at work or focusing on expanding my development skills, I enjoy playing guitar and listening to music.
@@ -215,22 +203,10 @@
          I intended to continue my education after I recieved that degree, so I went back to pursue a degree in Computer Programming.
          Unfortunately, I wasn't able to complete that degree for financial reasons, however, the courses I was able to take during this time made me
          develop a love for programming and development.  After I left school, I decided to pursue a career in the industry and began
-         to continue learning on my own.
+         to continue learning on my own.  I am currently working on learning REACT to add a framework to my set of skills.
        </p>
 
     </section> <!-- End of About Me Section -->
-
-    <!--***** Whats Next Section *****-->
-
-    <section id="whatsNextSection">
-      <h1 class="sectionHeading">Whats Next for Me?</h1>
-      <p>
-        So where do I hope to go from here?  I feel that finding the opportunity to start a career in the development industry is
-        the next natural step for me.  I feel that by working in the industry I will be able to take my skills
-        to the next level by working in a professional development environment with other developers.  I hope to expand my knowledge of the front-end
-        skills I currently have and add React to my set of skills as well as begin learning more about the back end side of things.
-      </p>
-    </section> <!-- End of Whats Next Section -->
 
   </div> <!-- End of Page Wrapper -->
 

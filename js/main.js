@@ -1,13 +1,3 @@
-//  Collapse Navigation on Smaller Devices
-$('.menu').click(function () {
-  $('.mainNav ul').toggleClass('active');
-});
-
-//  Function to Add Animations to Elements
-function animate(element, animation) {
-  $(element).addClass('animated ' + animation);
-}
-
 // Navigation
 $('.fa-times').click(function() {
   $('.sidebarMenu').addClass('hideMenu');
@@ -21,40 +11,10 @@ $('.toggleMenu').click(function() {
 
 /***** Add Animations to Elements *****/
 
-$('#landing').waypoint(function () {
-  $('#landing').css('visibility', 'visible');
-  animate('#landing', "fadeIn")
-}, {offset: '75%'});
-
-$('#aboutMeHeader').waypoint(function () {
-  $('#aboutMeHeader').css('visibility', 'visible');
-  animate('#aboutMeHeader', "slideInRight")
-}, {offset: '75%'});
-
-$('#aboutMeSection p').waypoint(function () {
-  $('#aboutMeSection p').css('visibility', 'visible');
-  animate('#aboutMeSection p', "slideInLeft")
-}, {offset: '75%'});
-
-$('#skillsSection h1').waypoint(function () {
-  $('#skillsSection h1').css('visibility', 'visible');
-  animate('#skillsSection h1', "swing")
-}, {offset: '75%'});
-
-$('dl').waypoint(function () {
-  $('dl').css('visibility', 'visible');
-  animate('dl', "fadeInRight")
-}, {offset: '75%'});
-
-$('#whatsNextSection h1').waypoint(function () {
-  $('#whatsNextSection h1').css('visibility', 'visible');
-  animate('#whatsNextSection h1', "tada")
-}, {offset: '75%'});
-
-$('#whatsNextSection p').waypoint(function () {
-  $('#whatsNextSection p').css('visibility', 'visible');
-  animate('#whatsNextSection p', "fadeIn")
-}, {offset: '75%'});
+//  Function to Add Animations to Elements
+function animate(element, animation) {
+  $(element).addClass('animated ' + animation);
+}
 
 $('#myWorkSection h1').waypoint(function () {
   $('#myWorkSection h1').css('visibility', 'visible');
@@ -66,26 +26,34 @@ $('#cardContainer').waypoint(function () {
   animate('#cardContainer', "lightSpeedIn")
 }, {offset: '75%'});
 
+$('#skillsSection h1').waypoint(function () {
+  $('#skillsSection h1').css('visibility', 'visible');
+  animate('#skillsSection h1', "zoomIn")
+}, {offset: '75%'});
+
+$('dl').waypoint(function () {
+  $('dl').css('visibility', 'visible');
+  animate('dl', "fadeInRight")
+}, {offset: '75%'});
+
+$('#aboutMeHeader').waypoint(function () {
+  $('#aboutMeHeader').css('visibility', 'visible');
+  animate('#aboutMeHeader', "slideInLeft")
+}, {offset: '75%'});
+
+$('#aboutMeSection p').waypoint(function () {
+  $('#aboutMeSection p').css('visibility', 'visible');
+  animate('#aboutMeSection p', "slideInRight")
+}, {offset: '75%'});
 
 /***** Animate Scrolling *****/
 
-$('#aboutMeNav').click(function() {
-  let about = $('#aboutMeSection').position().top;
+$('#homeNav').click(function() {
+  let home = $('#landing').position().top;
 
   $('html, body').animate(
     {
-      scrollTop: about
-    },
-    2500
-  );
-});
-
-$('#skillsNav').click(function() {
-  let skills = $('#skillsSection').position().top;
-
-  $('html, body').animate(
-    {
-      scrollTop: skills
+      scrollTop: home
     },
     2500
   );
@@ -102,12 +70,23 @@ $('#workNav').click(function() {
   );
 });
 
-$('#homeNav').click(function() {
-  let home = $('#landing').position().top;
+$('#skillsNav').click(function() {
+  let skills = $('#skillsSection').position().top;
 
   $('html, body').animate(
     {
-      scrollTop: home
+      scrollTop: skills
+    },
+    2500
+  );
+});
+
+$('#aboutMeNav').click(function() {
+  let about = $('#aboutMeSection').position().top;
+
+  $('html, body').animate(
+    {
+      scrollTop: about
     },
     2500
   );

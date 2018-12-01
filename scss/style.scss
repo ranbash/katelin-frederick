@@ -25,7 +25,7 @@ body {
 
 section {
   width: 80vw;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .sectionHeading {
@@ -33,7 +33,7 @@ section {
   background: $darkGrey;
   color: #f4f4f4;
   padding: 10px;
-  border-bottom: 5px solid $lightBlue;
+  border-bottom: 5px solid $goldenBrown;
   text-transform: uppercase;
   margin-bottom: 75px;
 }
@@ -49,13 +49,18 @@ section {
 .toggleMenu {
   position: fixed;
   padding: 15px 20px 15px 15px;
-  margin-top: 70px;
+  height: 100vh;
+  min-height: 100vh;
   color: #fff;
   cursor: pointer;
-  background-color: $darkGrey;
+  background-color: rgba(17, 17, 17, 0.9);
   z-index: 1;
-  font-size: 2em !important;
+  font-size: 4em !important;
   opacity: 0;
+}
+
+.toggleIcon {
+  margin-top: 50vh;
 }
 
 .sidebarMenu {
@@ -134,9 +139,10 @@ section {
 #landing {
   height: 100vh;
   width: 100vw;
-  background-image: url('../img/landingImage.jpg');
+  background-image: url('../img/background3.jpg');
   repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,8 +151,7 @@ section {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 10px $darkGrey;
-  border-bottom: 5px solid $lightBlue;
-  visibility: hidden;
+  border-bottom: 5px solid $goldenBrown;
   animation-duration: 2s;
   margin-bottom: 100px;
 
@@ -170,13 +175,68 @@ section {
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    border: 5px solid $lightBlue;
+    border: 8px solid $goldenBrown;
   }
+}
+
+//**** My Work Section ****//
+#cardContainer {
+  align-items: center;
+  visibility: hidden;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+/***** Skills Section *****/
+
+#skillsSection h1{
+  visibility: hidden;
+  animation-duration: 2s;
+}
+
+#skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #skillsList {
+    list-style: none;
+    .skillsItem {
+      display: flex;
+      align-items:  center;
+      margin-bottom: 50px;
+      .skillsLogo {
+        margin-right: 20px;
+      }
+      .skillsName {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+dl {
+  visibility: hidden;
+  animation-duration: 2s;
+  margin-top: 50px;
+}
+
+.skillsList {
+  font-size: 1.4em;
+  margin: 10px;
+  text-decoration: underline $goldenBrown;
+}
+
+dd {
+  margin-bottom: 35px;
 }
 
 /***** About Me Section *****/
 
 #aboutMeSection  {
+  margin-bottom: 50px;
+
   #aboutMeHeader {
     visibility: hidden;
     animation-duration: 2s;
@@ -190,61 +250,6 @@ section {
   }
 }
 
-/***** Skills Section *****/
-
-.carousel {
-  margin-top: 100px;
-}
-
-#skillsSection h1{
-  visibility: hidden;
-  animation-duration: 2s;
-}
-
-dl {
-  visibility: hidden;
-  animation-duration: 2s;
-  margin-top: 50px;
-}
-
-/***** Whats Next Section *****/
-
-#whatsNextSection {
-  margin: 150px 0 100px 0;
-
-  h1 {
-    visibility: hidden;
-    animation-duration: 2s;
-  }
-
-  p{
-    visibility: hidden;
-    animation-duration: 2s;
-  }
-}
-
-
-
-.skillsList {
-  font-size: 1.4em;
-  margin: 10px;
-  text-decoration: underline $lightBlue;
-}
-
-dd {
-  margin-bottom: 35px;
-}
-
-//**** My Work Section ****//
-#cardContainer {
-  align-items: center;
-  visibility: hidden;
-}
-
-.card {
-  margin-bottom: 50px;
-}
-
 //**** Footer Section ****//
 
 footer {
@@ -254,7 +259,7 @@ footer {
   padding: 0;
   padding-top: 15px;
   margin: 0;
-  border-top: solid 5px $lightBlue;
+  border-top: solid 5px $goldenBrown;
 }
 
 .contactContainer {
