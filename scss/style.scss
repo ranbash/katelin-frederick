@@ -196,10 +196,29 @@ section {
   animation-duration: 2s;
 }
 
+#tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  padding: 15px;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
 #skillsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
   #skillsList {
     list-style: none;
     .skillsItem {
@@ -306,15 +325,33 @@ footer {
 }
 
 /***** Media Queries *****/
+@media (max-width: 975px) {
+  .skillsLogo {
+    height: 150px;
+  }
+}
+
 @media (max-width: 824px) {
   .mainNav a{
     font-size: 15px;
+  }
+
+  .skillsLogo {
+    height: 100px;
+  }
+
+  .skillsName {
+    font-size: 1em;
   }
 }
 
 @media (max-width: 768px) {
   .toggle {
     display: block;
+  }
+
+  .toggleMenu {
+    font-size: .8em !important;
   }
 
   .mainNav ul {
@@ -338,6 +375,10 @@ footer {
   .landingHeading {
     font-size: 2.5em;
   }
+
+  th {
+    font-size: .8em;
+  }
 }
 
 @media (max-width: 650px) {
@@ -360,24 +401,24 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
-  .toggleMenu {
-    font-size: .8em !important;
-  }
-  .sidebarMenu {
-    width: 150px;
-    font-size: .5em;
-  }
-  .skillsItem {
+@media (max-width: 620px) {
+  td {
+    display: flex;
     flex-flow: column;
   }
 
   .skillsLogo {
     height: 150px;
   }
-  .skillsName {
-    font-size: 1em;
+}
+
+@media (max-width: 450px) {
+
+  .sidebarMenu {
+    width: 150px;
+    font-size: .5em;
   }
+
   #landing {
     .landingHeading
     {
@@ -387,5 +428,9 @@ footer {
     {
       font-size: 2em;
     }
+  }
+
+  .skillsLogo {
+    height: 100px;
   }
 }
