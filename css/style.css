@@ -163,7 +163,7 @@ section {
   justify-content: center;
   align-items: center; }
 
-th {
+.tableHeader {
   text-align: center; }
 
 td {
@@ -198,8 +198,8 @@ dl {
   margin: 10px;
   text-decoration: underline #965f33; }
 
-dd {
-  margin-bottom: 35px; }
+.skillsDef {
+  margin-bottom: 50px; }
 
 /***** About Me Section *****/
 #aboutMeSection {
@@ -275,7 +275,9 @@ footer {
   .toggle {
     display: block; }
   .toggleMenu {
-    font-size: .8em !important; }
+    font-size: .8em !important;
+    padding: 5px;
+    margin: 0px; }
   .mainNav ul {
     width: 100%;
     display: none; }
@@ -293,9 +295,9 @@ footer {
 
 @media (max-width: 650px) {
   #landing .landingHeading {
-    font-size: 4em; }
+    font-size: 3em; }
   #landing h5 {
-    font-size: 2em; }
+    font-size: 1em; }
   footer {
     display: flex;
     flex-flow: column;
@@ -315,9 +317,17 @@ footer {
   .sidebarMenu {
     width: 150px;
     font-size: .5em; }
-  #landing .landingHeading {
-    font-size: 4em; }
-  #landing h5 {
-    font-size: 2em; }
+  .fa-times {
+    font-size: 2em !important; }
+  .sectionHeading {
+    font-size: 1.5em; }
+  .subHeading {
+    font-size: 1.4em; }
   .skillsLogo {
-    height: 100px; } }
+    height: 100px; }
+  .skillsList {
+    font-size: 1.2em; }
+  .skillsDef {
+    font-size: .8em; }
+  #aboutMeSection p {
+    font-size: .8em; } }
