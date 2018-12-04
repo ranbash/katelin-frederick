@@ -310,6 +310,8 @@ footer {
     height: 150px; } }
 
 @media (max-width: 450px) {
+  .marginContainer {
+    margin-left: 30px; }
   .sidebarMenu {
     width: 150px;
     font-size: .5em; }
