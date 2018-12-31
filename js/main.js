@@ -1,4 +1,24 @@
 // Navigation
+var resize = function() {
+  var windowWidth = document.body.clientWidth;
+
+  if(windowWidth <= 860) {
+    $('.sidebarMenu').addClass('hideMenu');
+    $('.toggleMenu').addClass('opacityOne');
+  } else if(windowWidth > 860)  {
+    $('.toggleMenu').click(function() {
+      $('.sidebarMenu').removeClass('hideMenu');
+      $('.toggleMenu').removeClass('opacityOne');
+    });
+  };
+};
+
+$(window).resize(function() {
+  resize();
+})
+
+resize();
+
 $('.fa-times').click(function() {
   $('.sidebarMenu').addClass('hideMenu');
   $('.toggleMenu').addClass('opacityOne');

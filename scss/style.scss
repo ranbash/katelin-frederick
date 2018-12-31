@@ -324,15 +324,54 @@ footer {
 }
 
 /***** Media Queries *****/
-@media (max-width: 975px) {
-  .skillsLogo {
-    height: 150px;
+@media(max-width: 1100px) {
+  #landing {
+    .landingHeading {
+      font-size: 5em;
+    }
   }
 }
 
-@media (max-width: 824px) {
+@media (max-width: 975px) {
+  .marginContainer {
+    margin-left: 30px;
+  }
+
+  .skillsLogo {
+    height: 150px;
+  }
+
+  #landing {
+    .landingHeading {
+      font-size: 4em;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .sidebarMenu {
+    width: 150px;
+    font-size: .7em;
+  }
+
+  .fa-times {
+    font-size: 2em !important;
+  }
+
   .mainNav a{
     font-size: 15px;
+  }
+
+  .imageContainer {
+    img {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  #landing {
+    .landingHeading {
+      font-size: 3em;
+    }
   }
 
   .skillsLogo {
@@ -373,10 +412,6 @@ footer {
     font-size: 1.5em;
   }
 
-  .landingHeading {
-    font-size: 2.5em;
-  }
-
   th {
     font-size: .8em;
   }
@@ -387,10 +422,6 @@ footer {
     .landingHeading
     {
       font-size: 3em;
-    }
-    h5
-    {
-      font-size: 1em;
     }
   }
 
@@ -414,17 +445,8 @@ footer {
 }
 
 @media (max-width: 450px) {
-  .marginContainer {
-    margin-left: 30px;
-  }
-
   .sidebarMenu {
-    width: 150px;
     font-size: .5em;
-  }
-
-  .fa-times {
-    font-size: 2em !important;
   }
 
   .sectionHeading {
