@@ -223,6 +223,10 @@ section {
   text-shadow: 2px 5px 5px #333333;
   cursor: pointer; }
 
+#guideLink {
+  text-decoration: none;
+  color: yellow; }
+
 /***** Skills Section *****/
 #skillsSection h1 {
   visibility: hidden;
