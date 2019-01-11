@@ -208,7 +208,8 @@ section {
   padding: 10px; }
 
 .card-title {
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 15px; }
 
 .projectBtn {
   background: rgba(255, 255, 255, 0.2);
