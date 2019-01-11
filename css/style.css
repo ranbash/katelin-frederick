@@ -165,7 +165,9 @@ section {
   margin: 20px;
   box-sizing: border-box;
   display: inline-block;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.8);
+  blur-radius: 5px; }
 
 .cardContainer .box .imgBox {
   position: relative;
