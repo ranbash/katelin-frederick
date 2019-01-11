@@ -150,8 +150,79 @@ section {
   align-items: center;
   visibility: hidden; }
 
-.card {
-  margin-bottom: 50px; }
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.cardContainer .box {
+  position: relative;
+  width: auto;
+  height: auto;
+  background: #ff0;
+  margin: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden; }
+
+.cardContainer .box .imgBox {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+.cardContainer .box .imgBox img {
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+  transform: scale(1.2); }
+
+.cardContainer .box:hover .imgBox img {
+  transform: scale(1); }
+
+.cardContainer .box .projectDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: 1s;
+  opacity: 0;
+  filter: blur(10px);
+  transform: scale(1.5);
+  color: #fff; }
+
+.cardContainer .box:hover .projectDetails {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1); }
+
+.cardContainer .box .projectDetails .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 10px; }
+
+.card-title {
+  font-weight: bold; }
+
+.projectBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 3px 5px #333333;
+  font-weight: bold;
+  color: #fff;
+  font-size: .8em;
+  text-shadow: 2px 5px 5px #333333;
+  cursor: pointer; }
 
 /***** Skills Section *****/
 #skillsSection h1 {
