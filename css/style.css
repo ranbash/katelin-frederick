@@ -162,7 +162,6 @@ section {
   position: relative;
   width: auto;
   height: auto;
-  background: #ff0;
   margin: 20px;
   box-sizing: border-box;
   display: inline-block;
@@ -403,6 +402,12 @@ footer {
     font-size: 1.5em; }
   .subHeading {
     font-size: 1.4em; }
+  .projectBtn {
+    font-size: .5em;
+    margin: 10px; }
+  .card-text {
+    margin: 10px;
+    font-size: .7em; }
   .skillsLogo {
     height: 100px; }
   .skillsList {
